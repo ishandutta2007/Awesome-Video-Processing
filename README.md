@@ -1,1132 +1,232 @@
-# Awesome-Video-Processing
+<div align="center">
 
-Markdown
-## Top Video Processing Ecosystem
+# 🎬 Awesome Video Processing 🚀
 
+[![Awesome Video Processing Banner](assets/banner.svg)](https://github.com/ishandutta2007/Awesome-Video-Processing)
 
-**Curated List of SaaS/Hosted Platforms & Open-Source GitHub Projects**  
-*Focused on Video Transcoding, Encoding, Transformation, Editing, Processing, Optimization, Streaming & Media APIs*  
-**Last updated: August 2026**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Video-Processing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Video-Processing?style=social&color=white" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Video-Processing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Video-Processing?style=social&color=white" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Video-Processing/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Video-Processing" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+**A Curated Tech Index of Cloud Video APIs, SaaS Platforms, Open-Source Transcoding Engines, Codecs, Media Servers & Computer Vision Pipelines** 🎥✨
 
-This repository tracks notable **SaaS/Hosted Platforms** and **open-source projects** for **Video Processing**. These tools provide APIs, infrastructure, libraries, and platforms for video encoding, transcoding, resizing, compression, format conversion, editing, compositing, captioning, thumbnail generation, media analysis, adaptive bitrate packaging, streaming, and automated video creation.
+*Transcoding • Encoding • HLS/DASH Streaming • WebRTC • Video Editing • AI Media Pipelines • Hardware Acceleration • Media APIs*
 
+</div>
 
-**Examples** include Cloudinary, Imgix, Shotstack, Zencoder, Mux, Cloudflare Images, Filestack, Transloadit, Banuba, and api.video.
+---
 
+## 📖 Overview & Ecosystem Guide
 
-**Open-source emphasis**: The open-source ecosystem is particularly important in video processing because many commercial platforms are ultimately built around mature open technologies such as **FFmpeg, GStreamer, libavcodec, libavformat, OpenCV, ImageMagick, WebRTC, and various codec libraries**. This section therefore includes both complete self-hostable media platforms and lower-level building blocks that can be combined into custom video-processing infrastructure.
+Welcome to the definitive guide and repository index for **Video Processing Engineering**. Whether you are building real-time live streaming infrastructure, automated programmatic video generation pipelines, AI video computer vision models, or cloud-scale transcoding workflows, this collection curates top-tier **commercial SaaS platforms** and battle-tested **open-source projects**.
 
+### 🌟 Key Focus Areas
+- 🔄 **Transcoding & Encoding:** Multi-codec support (AV1, H.265/HEVC, H.264, VP9, ProRes), hardware acceleration (NVENC, Quick Sync, VA-API, VideoToolbox).
+- 📡 **Streaming Infrastructure:** Low-latency WebRTC, LL-HLS, MPEG-DASH, RTMP, RTSP, SRT ingestion, and edge CDN distribution.
+- ✂️ **Programmatic Editing & Automation:** JSON-driven timeline composition, canvas/React video rendering, caption burning, dynamic watermarking, and audio normalization.
+- 🤖 **Video AI & Computer Vision:** Object detection, scene classification, speech-to-text subtitling, perceptual quality scoring (VMAF, PSNR, SSIM).
 
-A useful distinction is that **video-processing platforms** provide hosted APIs and workflows, while **media frameworks and codecs** provide the underlying processing primitives. Some projects provide both.
+---
 
+## 📑 Table of Contents
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites or GitHub repositories.
+- [☁️ SaaS / Hosted Video Processing Platforms](#️-saas--hosted-video-processing-platforms)
+- [💻 Open-Source GitHub Projects (Ranked by Stars ⭐)](#-open-source-github-projects-ranked-by-stars-)
+- [🏗️ Recommended Architecture Combinations](#️-recommended-architecture-combinations)
+- [🧩 Video Processing Building Blocks](#-video-processing-building-blocks)
+- [💡 Core Video Concepts & Codecs](#-core-video-concepts--codecs)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📜 Disclaimer](#-disclaimer)
 
+---
 
-## Table of Contents
+## ☁️ SaaS / Hosted Video Processing Platforms
 
+*Ranked in descending order of company scale (Valuation / Market Cap / Revenue).*
 
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-- [Open-Source Video Processing Stack](#open-source-video-processing-stack)
-- [Video Processing Building Blocks](#video-processing-building-blocks)
-- [Important Video Processing Concepts](#important-video-processing-concepts)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+| Platform | Description | Company Scale (Valuation / ARR) | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Cloudflare Images & Stream](https://www.cloudflare.com/developer-platform/products/cloudflare-images/)** | Cloudflare's global edge infrastructure for image & video transformation, adaptive streaming, storage, and low-latency CDN delivery. | **~$112.4B Market Cap** (NYSE: NET) / ~$2.5B+ ARR | **Stream:** Starts at $5.00/mo (1,000 storage mins; $1.00/1k delivery mins). **Images:** $5.00/mo (100k stored images + $1.00/100k delivered) | **Images:** 5,000 free unique transformations/mo. **Stream:** 100 free stored mins and 10,000 free delivery mins/mo on Pro/Business plans |
+| **[Cloudinary](https://cloudinary.com/)** | Enterprise cloud media platform offering automated transcoding, smart cropping, AI visual analysis, multi-CDN delivery, and dynamic transformations. | **~$2.0B Valuation** (Bootstrapped Unicorn) / ~$100M ARR | **Plus Plan:** $99/mo ($89/mo billed annually) with 225 monthly credits included | **Free Forever Plan:** 25 monthly credits (~25,000 transformations, 25 GB storage, or 25 GB net bandwidth), up to 3 user seats |
+| **[Mux](https://www.mux.com/)** | Developer-first video infrastructure platform powering video ingestion, automated multi-bitrate encoding, live streaming, and real-time playback analytics. | **~$1.0B Valuation** (Series D Unicorn) / ~$46.1M ARR | **Pay-As-You-Go ($0 base fee):** $0.05/min input encoding ($0/min for Basic quality), $0.003/min storage/mo, $0.0012/min streamed delivery | **Free Forever Plan:** Up to 10 stored video assets and 100,000 delivery minutes/month (live streaming excluded) |
+| **[Brightcove (Zencoder)](https://zencoder.com/)** | Industry-standard cloud encoding and media delivery engine for high-volume automated transcoding, format conversions, and OTT workflows. | **~$404.7M Market Cap** (NASDAQ: BCOV) / ~$200M Revenue | **Pay-As-You-Go:** $0.05 per output minute ($0.02/min on volume monthly subscription plans) | **Integration Test Mode (Free Forever):** Unlimited free test jobs with output video duration capped at 5 seconds per job |
+| **[Imgix](https://www.imgix.com/)** | High-performance real-time URL-based media transformation, visual optimization, dynamic rendering, and CDN caching platform. | **~$100M Valuation** (Venture-backed) / ~$10.4M ARR | **Starter Plan:** $25/mo (includes 100 credits; Basic plan at $75/mo for 375 credits) | **30-Day Free Trial:** 100 free credits to evaluate platform features (no credit card required; no permanent free plan) |
+| **[Banuba](https://www.banuba.com/)** | Video and AR technology platform offering specialized client SDKs for mobile video editing, AR face filters, background subtraction, and UGC tools. | **~$60M - $80M Valuation** (Profitable) / ~$9.8M ARR | **Custom Pricing (Quote-based):** Tiered based on Monthly Active Users (MAU) per platform (iOS, Android, Flutter, React Native; contact sales for quote) | **14-Day Free Trial:** Full SDK feature access and platform evaluation token across all supported platforms for 14 days |
+| **[Filestack](https://www.filestack.com/)** | Media upload, transformation, file ingestion, OCR, virus scanning, and asset management API suite for web and mobile apps. | **~$40M - $50M Valuation** (Parent: Idera $1B+) / ~$15M ARR | **Start Plan:** $69/mo (includes 50,000 uploads, 25,000 transformations, 50 GB bandwidth, 100 GB storage) | **Free Forever Plan:** 500 uploads/month, 1,000 transformations/month, 1.0 GB bandwidth/month, 1.0 GB storage, 1 user seat |
+| **[api.video](https://api.video/)** | End-to-end video API service for instant video upload, 4K encoding, live streaming, hosted video player, and global edge delivery. | **~$25M - $30M Valuation** (Series A) / ~$3M - $5M ARR | **Pay-As-You-Go ($0 base fee):** $0.00/min encoding (free unlimited), hosting from $0.00285/min stored/mo, delivery from $0.0017/min delivered | **Developer Sandbox (Free Forever):** Full API testing access, videos capped at 30 seconds max length, watermarked, 24-hour expiration |
+| **[Shotstack](https://shotstack.io/)** | Cloud video automation API utilizing declarative JSON timeline manifests to programmatically render, composite, and generate video at scale. | **~$15M - $20M Valuation** (Seed stage) / ~$770K ARR | **Starter Plan:** $39/mo (includes 200 render minutes / credits; PAYG available at ~$0.30/min with $75 min commitment) | **30-Day Free Trial / Sandbox:** 10 free credits valid for 30 days (test renders include watermark; no permanent production free plan) |
+| **[Transloadit](https://transloadit.com/)** | Automation serverless pipeline service for video encoding, resizing, watermarking, audio extraction, and cloud storage replication. | **~$10M - $15M Valuation** (Bootstrapped profitable) / ~$1.3M ARR | **Community / Starter Tier:** $9/mo (includes 50 GB processing data + $0.18/GB overage) | **Community Plan (Free Forever):** 5 GB processing data per month (trial outputs subject to watermarking/trimming) |
 
+---
 
-## SaaS/Hosted Platforms
+## 💻 Open-Source GitHub Projects (Ranked by Stars ⭐)
 
-| Platform | Description | Starting Pricing | Free Tier / Trial Limits |
-| :--- | :--- | :--- | :--- |
-| **[Cloudinary](https://cloudinary.com/)** | Cloud-based image and video platform providing upload, storage, transformation, transcoding, optimization, AI processing, delivery, and programmable media APIs. | **Plus Plan:** $99/month ($89/month billed annually) for 225 monthly credits | **Free Forever Plan:** 25 monthly credits (~25,000 transformations, 25 GB storage, or 25 GB net bandwidth), up to 3 user seats |
-| **[Imgix](https://www.imgix.com/)** | Real-time image and media processing platform focused on URL-based transformation, optimization, rendering, and delivery. | **Starter Plan:** $25/month (includes 100 credits; Basic plan at $75/month for 375 credits) | **30-Day Free Trial:** 100 free credits to evaluate platform features (no credit card required; no permanent free plan) |
-| **[Shotstack](https://shotstack.io/)** | Cloud video automation API that uses JSON timelines to programmatically edit, compose, render, and personalize videos at scale. | **Starter Plan:** $39/month (includes 200 render minutes / credits; PAYG available at ~$0.30/min with $75 min commitment) | **30-Day Free Trial / Sandbox:** 10 free credits valid for 30 days (test renders include watermark; no permanent production free plan) |
-| **[Zencoder](https://zencoder.com/)** | Cloud video encoding API by Brightcove for automated transcoding, format conversion, encoding workflows, and large-scale media processing. | **Pay-As-You-Go:** $0.05 per output minute ($0.02/min on volume monthly subscription plans) | **Integration Test Mode (Free Forever):** Unlimited free test jobs with output video duration capped at 5 seconds per job |
-| **[Mux](https://www.mux.com/)** | Developer-focused video infrastructure platform covering video ingestion, encoding, storage, playback, streaming, and video analytics. | **Pay-As-You-Go ($0 base fee):** $0.05/min input encoding ($0/min for Basic quality), $0.003/min storage/month, $0.0012/min streamed delivery | **Free Forever Plan:** Up to 10 stored video assets and 100,000 delivery minutes/month (live streaming excluded) |
-| **[Cloudflare Images](https://www.cloudflare.com/developer-platform/products/cloudflare-images/)** | Cloudflare's image and video infrastructure for media storage, transformation, optimization, streaming, and global CDN delivery. | **Stream:** Starts at $5.00/month (covers 1,000 stored minutes; delivery at $1.00/1,000 mins). **Images:** $5.00/month (100,000 images stored + $1.00/100k delivered) | **Images:** 5,000 free unique transformations/month. **Stream:** 100 free stored minutes and 10,000 free delivery minutes/month on Pro/Business plans |
-| **[Filestack](https://www.filestack.com/)** | File and media processing platform providing upload, transformation, conversion, storage integration, and delivery APIs. | **Start Plan:** $69/month (includes 50,000 uploads, 25,000 transformations, 50 GB bandwidth, 100 GB storage) | **Free Forever Plan:** 500 uploads/month, 1,000 transformations/month, 1.0 GB bandwidth/month, 1.0 GB storage, 1 user seat |
-| **[Transloadit](https://transloadit.com/)** | Automated file and video processing platform using API-driven processing workflows, encoding robots, resizing, and watermarking. | **Community / Starter Tier:** $9/month (includes 50 GB processing data + $0.18/GB overage) | **Community Plan (Free Forever):** 5 GB processing data per month (trial outputs subject to watermarking/trimming) |
-| **[Banuba](https://www.banuba.com/)** | Video and AR technology platform providing SDKs for video editing, effects, filters, face tracking, and user-generated video experiences. | **Custom Pricing (Quote-based):** Tiered based on Monthly Active Users (MAU) per platform (iOS, Android, Flutter, React Native; contact sales for quote) | **14-Day Free Trial:** Full SDK feature access and evaluation token across all supported platforms for 14 days |
-| **[api.video](https://api.video/)** | Video API platform providing video upload, encoding, storage, playback, streaming, and programmable video infrastructure. | **Pay-As-You-Go ($0 base fee):** $0.00/min encoding (free unlimited), hosting from $0.00285/min stored/month, delivery from $0.0017/min delivered | **Developer Sandbox (Free Forever):** Full API testing access, videos capped at 30 seconds max length, watermarked, 24-hour expiration |
+*All repositories are ranked in descending order based on their GitHub star counts.*
 
-### Additional Major Hosted Video Processing Platforms
-Recommended Open-Source Combinations
+1. **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** [![GitHub stars](https://img.shields.io/github/stars/yt-dlp/yt-dlp?style=social&color=white)](https://github.com/yt-dlp/yt-dlp/stargazers)  
+   ⚡ Feature-rich command-line video and audio downloader supporting hundreds of media sites with advanced extraction and post-processing capabilities.
 
-Simple Video Conversion
+2. **[OpenCV](https://github.com/opencv/opencv)** [![GitHub stars](https://img.shields.io/github/stars/opencv/opencv?style=social&color=white)](https://github.com/opencv/opencv/stargazers)  
+   👁️ Open Source Computer Vision and Machine Learning software library with thousands of optimized algorithms for real-time video analysis, object tracking, and image processing.
 
-FFmpeg + MinIO + FastAPI
+3. **[OBS Studio](https://github.com/obsproject/obs-studio)** [![GitHub stars](https://img.shields.io/github/stars/obsproject/obs-studio?style=social&color=white)](https://github.com/obsproject/obs-studio/stargazers)  
+   🎥 Free and open-source software for live video recording, audio mixing, scene composition, and high-performance live broadcasting.
 
-Good for basic upload, transcoding, compression, thumbnail generation, and media APIs.
+4. **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** [![GitHub stars](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social&color=white)](https://github.com/FFmpeg/FFmpeg/stargazers)  
+   🎞️ The ubiquitous industry-standard multimedia framework capable of decoding, encoding, transcoding, muxing, demuxing, streaming, filtering, and playing almost anything ever created.
 
-Cloudinary-Style Self-Hosted Media Processing
+5. **[Remotion](https://github.com/remotion-dev/remotion)** [![GitHub stars](https://img.shields.io/github/stars/remotion-dev/remotion?style=social&color=white)](https://github.com/remotion-dev/remotion/stargazers)  
+   ⚛️ Create programmatic videos and animations using React, web technologies, and automated server-side rendering pipelines.
 
-Openinary + MinIO/S3 + FFmpeg + CDN
+6. **[Jellyfin](https://github.com/jellyfin/jellyfin)** [![GitHub stars](https://img.shields.io/github/stars/jellyfin/jellyfin?style=social&color=white)](https://github.com/jellyfin/jellyfin/stargazers)  
+   🍿 The Free Software Media System that puts you in control of managing, transcoding on the fly, and streaming your media collection across devices.
 
-Useful for applications requiring URL-based transformations, media storage, caching, and self-hosted infrastructure.
+7. **[Video.js](https://github.com/videojs/video.js)** [![GitHub stars](https://img.shields.io/github/stars/videojs/video.js?style=social&color=white)](https://github.com/videojs/video.js/stargazers)  
+   🌐 Open-source HTML5 video player framework with support for adaptive streaming (HLS/DASH), plugins, skinning, and cross-browser consistency.
 
-Production Video API
+8. **[Plyr](https://github.com/sampotts/plyr)** [![GitHub stars](https://img.shields.io/github/stars/sampotts/plyr?style=social&color=white)](https://github.com/sampotts/plyr/stargazers)  
+   ✨ A simple, lightweight, accessible, and customizable HTML5, YouTube, and Vimeo media player with full adaptive streaming integration.
 
-FastAPI + FFmpeg + Redis/Celery + PostgreSQL + MinIO
+9. **[SRS (Simple Realtime Server)](https://github.com/ossrs/srs)** [![GitHub stars](https://img.shields.io/github/stars/ossrs/srs?style=social&color=white)](https://github.com/ossrs/srs/stargazers)  
+   🚀 High-performance, production-ready video server supporting RTMP, WebRTC, HLS, HTTP-FLV, SRT, and ultra-low-latency live streaming.
 
-Provides an API-driven architecture for asynchronous video-processing jobs.
+10. **[HandBrake](https://github.com/HandBrake/HandBrake)** [![GitHub stars](https://img.shields.io/github/stars/HandBrake/HandBrake?style=social&color=white)](https://github.com/HandBrake/HandBrake/stargazers)  
+    🗜️ Open-source video transcoder for converting video from nearly any format to a selection of modern, widely supported codecs with optimized presets.
 
-Large-Scale Transcoding
+11. **[LiveKit](https://github.com/livekit/livekit)** [![GitHub stars](https://img.shields.io/github/stars/livekit/livekit?style=social&color=white)](https://github.com/livekit/livekit/stargazers)  
+    🎙️ End-to-end WebRTC stack and infrastructure for real-time video conferencing, live streaming, voice AI agents, and interactive multi-party media.
 
-Kubernetes + FFmpeg + Redis/Kafka + S3/MinIO + GPU workers
+12. **[MediaMTX](https://github.com/bluenviron/mediamtx)** [![GitHub stars](https://img.shields.io/github/stars/bluenviron/mediamtx?style=social&color=white)](https://github.com/bluenviron/mediamtx/stargazers)  
+    📡 Zero-dependency real-time media server and proxy that routes, converts, and republishes RTSP, RTMP, HLS, WebRTC, and SRT video streams.
 
-Useful for processing large volumes of videos in parallel.
+13. **[hls.js](https://github.com/video-dev/hls.js)** [![GitHub stars](https://img.shields.io/github/stars/video-dev/hls.js?style=social&color=white)](https://github.com/video-dev/hls.js/stargazers)  
+    📶 JavaScript library that implements an HTTP Live Streaming (HLS) client relying on HTML5 video and MediaSource Extensions (MSE).
 
-Real-Time Video
+14. **[ffmpeg-python](https://github.com/kkroening/ffmpeg-python)** [![GitHub stars](https://img.shields.io/github/stars/kkroening/ffmpeg-python?style=social&color=white)](https://github.com/kkroening/ffmpeg-python/stargazers)  
+    🐍 Python bindings for FFmpeg with complex filter-graph support, fluent piping, and granular encoding options.
 
-MediaMTX + FFmpeg/GStreamer + WebRTC/HLS
+15. **[Janus Gateway](https://github.com/meetecho/janus-gateway)** [![GitHub stars](https://img.shields.io/github/stars/meetecho/janus-gateway?style=social&color=white)](https://github.com/meetecho/janus-gateway/stargazers)  
+    🛡️ General-purpose WebRTC server and media gateway designed to set up WebRTC media communications with server-side processing plugins.
 
-Useful for camera ingestion, live streaming, protocol conversion, recording, and playback.
+16. **[fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)** [![GitHub stars](https://img.shields.io/github/stars/fluent-ffmpeg/node-fluent-ffmpeg?style=social&color=white)](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/stargazers)  
+    🟢 Comprehensive Node.js module that provides a fluent, chainable API for executing FFmpeg transcoding tasks.
 
-Low-Latency Streaming
+17. **[GStreamer](https://github.com/GStreamer/gstreamer)** [![GitHub stars](https://img.shields.io/github/stars/GStreamer/gstreamer?style=social&color=white)](https://github.com/GStreamer/gstreamer/stargazers)  
+    🧩 Extremely powerful, modular pipeline-based multimedia framework used to build arbitrary media processing workflows from source to sink.
 
-MediaMTX/SRS/OvenMediaEngine + WebRTC + HLS
+18. **[Shaka Player](https://github.com/shaka-project/shaka-player)** [![GitHub stars](https://img.shields.io/github/stars/shaka-project/shaka-player?style=social&color=white)](https://github.com/shaka-project/shaka-player/stargazers)  
+    🛡️ Google's open-source JavaScript player library for adaptive media (DASH & HLS) with integrated DRM systems (Widevine, PlayReady, FairPlay).
 
-Useful for interactive and near-real-time video applications.
+19. **[Shotcut](https://github.com/shotcut/shotcut)** [![GitHub stars](https://img.shields.io/github/stars/shotcut/shotcut?style=social&color=white)](https://github.com/shotcut/shotcut/stargazers)  
+    🎬 Cross-platform non-linear video editor supporting hundreds of audio/video formats, 4K resolutions, timeline editing, and GPU-accelerated effects.
 
-Programmatic Video Generation
+20. **[OpenH264](https://github.com/cisco/openh264)** [![GitHub stars](https://img.shields.io/github/stars/cisco/openh264?style=social&color=white)](https://github.com/cisco/openh264/stargazers)  
+    🔐 Cisco's open-source H.264 / AVC codec implementation supporting real-time video communications and WebRTC encoding/decoding.
 
-Remotion + FFmpeg + Node.js + S3/MinIO
+21. **[OvenMediaEngine](https://github.com/AirenSoft/OvenMediaEngine)** [![GitHub stars](https://img.shields.io/github/stars/AirenSoft/OvenMediaEngine?style=social&color=white)](https://github.com/AirenSoft/OvenMediaEngine/stargazers)  
+    ⚡ Ultra-low-latency streaming server capable of broadcasting sub-second latency video via WebRTC, Low Latency HLS (LL-HLS), and RTMP.
 
-Useful for automatically generating personalized marketing, social, educational, and product videos.
+22. **[rav1e](https://github.com/xiph/rav1e)** [![GitHub stars](https://img.shields.io/github/stars/xiph/rav1e?style=social&color=white)](https://github.com/xiph/rav1e/stargazers)  
+    🦀 Ultra-fast, memory-safe AV1 video encoder written in Rust, designed to provide high encoding density and superior compression efficiency.
 
-AI Video Analytics
+23. **[OpenShot](https://github.com/OpenShot/openshot-qt)** [![GitHub stars](https://img.shields.io/github/stars/OpenShot/openshot-qt?style=social&color=white)](https://github.com/OpenShot/openshot-qt/stargazers)  
+    ✂️ Award-winning, easy-to-use open-source video editor built on C++ and Python, featuring 3D animated titles, curve-based keyframe animations, and audio waveforms.
 
-FFmpeg + OpenCV + MediaPipe/Ultralytics + GPU
+24. **[dash.js](https://github.com/Dash-Industry-Forum/dash.js)** [![GitHub stars](https://img.shields.io/github/stars/Dash-Industry-Forum/dash.js?style=social&color=white)](https://github.com/Dash-Industry-Forum/dash.js/stargazers)  
+    📊 The official reference client implementation of the MPEG-DASH standard by the DASH Industry Forum for playback of adaptive bitrate video streams.
 
-Useful for object detection, tracking, face/pose analysis, scene analysis, moderation, and video intelligence.
+25. **[Ant Media Server](https://github.com/ant-media/Ant-Media-Server)** [![GitHub stars](https://img.shields.io/github/stars/ant-media/Ant-Media-Server?style=social&color=white)](https://github.com/ant-media/Ant-Media-Server/stargazers)  
+    📡 Scalable, ultra-low-latency WebRTC and adaptive streaming server supporting auto-scaling on Kubernetes, CMAF, and RTMP ingestion.
 
-Multimedia Processing Platform
+26. **[Shaka Packager](https://github.com/shaka-project/shaka-packager)** [![GitHub stars](https://img.shields.io/github/stars/shaka-project/shaka-packager?style=social&color=white)](https://github.com/shaka-project/shaka-packager/stargazers)  
+    📦 Media packaging framework by Google for VOD and Live DASH and HLS packaging, encryption (DRM), segmenting, and multi-track audio muxing.
 
-GStreamer + FFmpeg + MediaMTX + MinIO + Kubernetes
+27. **[GPAC / MP4Box](https://github.com/gpac/gpac)** [![GitHub stars](https://img.shields.io/github/stars/gpac/gpac?style=social&color=white)](https://github.com/gpac/gpac/stargazers)  
+    🧰 Open-source multimedia framework with MP4Box for MP4 multiplexing, DASH/HLS segmenting, media inspection, subtitle packaging, and SVG compositing.
 
-A flexible foundation for building a broad self-hosted video infrastructure platform.
+28. **[MLT Framework](https://github.com/mltframework/mlt)** [![GitHub stars](https://img.shields.io/github/stars/mltframework/mlt?style=social&color=white)](https://github.com/mltframework/mlt/stargazers)  
+    🎛️ Modular open-source multimedia framework designed for television broadcasting, non-linear video editing, clip compositing, and transition rendering.
 
-Maximum Open-Source Flexibility
+---
 
-Kubernetes + FFmpeg + GStreamer + MinIO + MediaMTX + Redis + PostgreSQL + OpenCV + Video.js
+## 🏗️ Recommended Architecture Combinations
 
-Provides independent control over storage, processing, encoding, streaming, APIs, analytics, and playback.
+Below are battle-tested open-source architectural patterns for specific video engineering workloads:
 
-Video Processing Building Blocks
-Video Ingestion
+### 1. 🔄 Scalable On-Demand Transcoding Service
+- **Components:** `FastAPI / Go` + `FFmpeg (with NVENC GPU)` + `Celery / Redis / Kafka` + `MinIO / S3` + `PostgreSQL`
+- **Use Case:** Asynchronous video ingestion, multi-bitrate HLS/DASH packaging, thumbnail extraction, and webhook status notification.
 
-Video Upload
+### 2. ⚡ Ultra-Low-Latency WebRTC & Live Broadcasting
+- **Components:** `MediaMTX / SRS / OvenMediaEngine` + `WebRTC / WHEP / WHIP` + `LL-HLS` + `OBS Studio`
+- **Use Case:** Interactive live streaming, surveillance camera RTSP-to-WebRTC conversion, webinar platforms, and auction broadcasts.
 
-Multipart Upload
+### 3. 🎨 Programmatic Video Generation at Scale
+- **Components:** `Remotion` + `Node.js / Chromium SSR` + `FFmpeg` + `AWS Lambda / Kubernetes`
+- **Use Case:** Generating personalized dynamic marketing clips, automated social media reels, sports highlight montages, and dynamic data-driven charts.
 
-Resumable Upload
+### 4. 🧠 AI Video Analytics & Intelligence Pipeline
+- **Components:** `OpenCV` + `FFmpeg / PyAV` + `Ultralytics (YOLO)` + `OpenAI Whisper` + `Triton Inference Server`
+- **Use Case:** Real-time object detection, automated subtitle & caption generation, content moderation, scene boundary detection, and OCR extraction.
 
-Direct-to-S3 Upload
+---
 
-HTTP Ingestion
+## 🧩 Video Processing Building Blocks
 
-RTMP Ingestion
+### 📥 1. Video Ingestion & Protocols
+- **File Uploads:** Resumable Upload (tus protocol), Multipart S3 Upload, Direct-to-Storage presigned URLs.
+- **Live Streams:** RTMP, RTSP, SRT (Secure Reliable Transport), WebRTC (WHIP/WHEP), Zixi, RIST.
 
-RTSP Ingestion
+### ⚙️ 2. Transcoding & Transformation Operations
+- **Spatial:** Scaling, Resizing, Smart Cropping (letterboxing / pan-and-scan), Rotation, Aspect Ratio Conversion.
+- **Temporal:** Trimming, Slicing, Speed adjustment (Slow-Motion, Time-Lapse), Frame Rate Interpolation.
+- **Compositing:** Watermarking, Dynamic Overlays, Subtitle Burning (SRT/ASS/VTT), Picture-in-Picture (PiP), Chroma Keying.
+- **Audio:** Normalization (EBU R128 / LUFS), Audio Track Replacement, Multi-lingual Track Muxing, Noise Reduction.
 
-SRT Ingestion
+### 📦 3. Packaging, DRM & Delivery
+- **Adaptive Bitrate (ABR):** HLS (`.m3u8`), MPEG-DASH (`.mpd`), Low-Latency HLS (LL-HLS), CMAF (Common Media Application Format).
+- **Protection & DRM:** Widevine, FairPlay, PlayReady, ClearKey AES-128 encryption.
 
-WebRTC Ingestion
+---
 
-Camera Ingestion
+## 💡 Core Video Concepts & Codecs
 
-Screen Capture
+| Category | Formats & Standards | Primary Usage |
+| :--- | :--- | :--- |
+| **Video Codecs** | **AV1, H.265/HEVC, H.264/AVC, VP9, ProRes, DNxHD** | Compression efficiency, broadcast master delivery, streaming compatibility |
+| **Audio Codecs** | **AAC, Opus, FLAC, AC-3, E-AC-3, MP3** | High-fidelity audio, ultra-low-latency real-time voice, surround sound |
+| **Containers** | **MP4, WebM, MKV, MOV, MPEG-TS, Fragmented MP4 (fMP4)** | Multiplexed audio/video stream encapsulation and metadata tagging |
+| **Quality Metrics** | **VMAF (Netflix), PSNR, SSIM, MS-SSIM** | Objective evaluation of perceptual video quality versus compression ratio |
+| **Hardware Encoders** | **NVIDIA NVENC/NVDEC, Intel Quick Sync (QSV), Apple VideoToolbox, VA-API** | Dedicated silicon for ultra-fast, power-efficient encoding & decoding |
 
-Live Video Ingestion
+---
 
-Batch Video Ingestion
+## 📈 Star History
 
-Transcoding
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Video-Processing&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Video-Processing&type=date&legend=top-left)
 
-Video Transcoding
+---
 
-Video Encoding
+## 🤝 How to Contribute
 
-Video Decoding
+Contributions to expand this repository are warmly welcomed! Please follow these guidelines:
+1. 🍴 **Fork the repository** on GitHub.
+2. 📝 **Add or update entries** in [README.md](README.md) following the established table/list formatting.
+3. ⭐ **Ensure factual accuracy:** Include official links, GitHub repository URLs with star badges, and precise pricing/free-tier limits for commercial tools.
+4. 🔍 **Verify open-source licenses** before submitting new open-source software.
+5. 🚀 **Submit a Pull Request (PR)** with a concise summary of your changes.
 
-Format Conversion
+---
 
-Codec Conversion
+## 📜 Disclaimer
 
-Resolution Conversion
+*This repository is a community-curated technological index for video engineers, developers, and media architects. Product names, logos, and brands are property of their respective owners. Information regarding pricing, features, and metrics is subject to change by respective vendors.*
 
-Frame Rate Conversion
-
-Bitrate Conversion
-
-Constant Bitrate
-
-Variable Bitrate
-
-Two-Pass Encoding
-
-Hardware Encoding
-
-GPU Encoding
-
-CPU Encoding
-
-Batch Transcoding
-
-Distributed Transcoding
-
-Video Editing
-
-Trim
-
-Cut
-
-Crop
-
-Resize
-
-Scale
-
-Rotate
-
-Flip
-
-Concatenate
-
-Split
-
-Overlay
-
-Watermark
-
-Text Overlay
-
-Subtitles
-
-Captions
-
-Transitions
-
-Filters
-
-Color Correction
-
-Color Grading
-
-Audio Mixing
-
-Audio Replacement
-
-Background Music
-
-Compositing
-
-Chroma Key
-
-Green Screen
-
-Picture-in-Picture
-
-Slow Motion
-
-Time-Lapse
-
-Frame Interpolation
-
-Video Optimization
-
-Video Compression
-
-Bitrate Optimization
-
-Per-Title Encoding
-
-Per-Scene Encoding
-
-Content-Aware Encoding
-
-Adaptive Bitrate
-
-Resolution Ladder
-
-Encoding Ladder
-
-Quality Optimization
-
-VMAF Optimization
-
-Bandwidth Optimization
-
-Storage Optimization
-
-CDN Optimization
-
-Automatic Format Selection
-
-Streaming
-
-Live Streaming
-
-Video-on-Demand
-
-VOD
-
-Low-Latency Streaming
-
-Ultra-Low-Latency Streaming
-
-Adaptive Bitrate Streaming
-
-HLS
-
-DASH
-
-CMAF
-
-WebRTC
-
-RTMP
-
-RTSP
-
-SRT
-
-WebTransport
-
-MPEG-TS
-
-LL-HLS
-
-DASH-LL
-
-Video Packaging
-
-HLS Packaging
-
-MPEG-DASH Packaging
-
-CMAF Packaging
-
-Segmenting
-
-Fragmented MP4
-
-MPEG-TS
-
-Manifest Generation
-
-Multi-Bitrate Packaging
-
-Subtitle Packaging
-
-Audio Track Packaging
-
-DRM Packaging
-
-Video Codecs
-
-H.264 / AVC
-
-H.265 / HEVC
-
-AV1
-
-VP8
-
-VP9
-
-VVC / H.266
-
-MPEG-2
-
-MPEG-4
-
-Theora
-
-ProRes
-
-DNxHD
-
-DNxHR
-
-JPEG 2000
-
-Audio Codecs
-
-AAC
-
-Opus
-
-MP3
-
-Vorbis
-
-AC-3
-
-E-AC-3
-
-FLAC
-
-PCM
-
-ALAC
-
-Containers
-
-MP4
-
-MOV
-
-MKV
-
-WebM
-
-AVI
-
-MPEG-TS
-
-MPEG-PS
-
-MXF
-
-Ogg
-
-3GP
-
-Video Metadata
-
-Media Metadata
-
-EXIF
-
-XMP
-
-ID3
-
-MediaInfo
-
-FFprobe
-
-Duration
-
-Resolution
-
-Frame Rate
-
-Bitrate
-
-Codec
-
-Color Space
-
-Color Primaries
-
-HDR Metadata
-
-Audio Channels
-
-Subtitle Tracks
-
-Video AI
-
-Object Detection
-
-Object Tracking
-
-Face Detection
-
-Face Recognition
-
-Face Tracking
-
-Pose Estimation
-
-Human Detection
-
-Scene Detection
-
-Shot Detection
-
-OCR
-
-Video Classification
-
-Action Recognition
-
-Content Moderation
-
-NSFW Detection
-
-Logo Detection
-
-Brand Detection
-
-Visual Search
-
-Video Embeddings
-
-Multimodal Embeddings
-
-Video Captioning
-
-Video Summarization
-
-Subtitles & Accessibility
-
-Closed Captions
-
-Open Captions
-
-SRT
-
-VTT
-
-TTML
-
-WebVTT
-
-Automatic Transcription
-
-Speech-to-Text
-
-Translation
-
-Caption Alignment
-
-Subtitle Burning
-
-Multi-Language Captions
-
-Audio Description
-
-Video Quality
-
-VMAF
-
-PSNR
-
-SSIM
-
-MS-SSIM
-
-Video Quality Assessment
-
-Perceptual Quality
-
-Compression Artifacts
-
-Banding
-
-Blocking
-
-Blurring
-
-Ringing
-
-Motion Artifacts
-
-Hardware Acceleration
-
-NVIDIA NVENC
-
-NVIDIA NVDEC
-
-Intel Quick Sync
-
-AMD VCE
-
-AMD VCN
-
-Apple VideoToolbox
-
-VA-API
-
-Video4Linux
-
-CUDA
-
-OpenCL
-
-Metal
-
-GPU Transcoding
-
-Media Infrastructure
-
-FFmpeg
-
-GStreamer
-
-MediaMTX
-
-SRS
-
-OvenMediaEngine
-
-WebRTC
-
-MinIO
-
-S3
-
-Redis
-
-Kafka
-
-PostgreSQL
-
-Kubernetes
-
-Docker
-
-CDN
-
-Object Storage
-
-Edge Processing
-
-Distributed Workers
-
-Job Queues
-
-Video APIs
-
-Video Upload API
-
-Transcoding API
-
-Encoding API
-
-Video Editing API
-
-Video Transformation API
-
-Thumbnail API
-
-Screenshot API
-
-Caption API
-
-Subtitle API
-
-Streaming API
-
-Playback API
-
-Media Metadata API
-
-Video Analysis API
-
-Video Moderation API
-
-Video AI API
-
-Video Generation API
-
-Video Applications
-
-Video Hosting
-
-Video CMS
-
-Video CDN
-
-Video-on-Demand
-
-Live Streaming
-
-Video Editing
-
-Video Generation
-
-Video Personalization
-
-Video Advertising
-
-Video Commerce
-
-Video Analytics
-
-Video Surveillance
-
-Video Conferencing
-
-E-Learning Video
-
-UGC Video
-
-Social Video
-
-Marketing Video
-
-Product Video
-
-AI Video
-
-Video Search
-
-Video Archives
-
-Developer Video Infrastructure
-
-Video-as-a-Service
-
-Video API
-
-Media API
-
-Programmable Video
-
-Programmable Media
-
-Serverless Video Processing
-
-Cloud Transcoding
-
-Self-Hosted Transcoding
-
-Distributed Transcoding
-
-GPU Transcoding
-
-Edge Video Processing
-
-Real-Time Video Processing
-
-Batch Video Processing
-
-Event-Driven Video Processing
-
-Media Pipelines
-
-Video Processing Workers
-
-Important Video Processing Concepts
-
-Video Transcoding
-
-Video Encoding
-
-Video Decoding
-
-Media Processing
-
-Video Transformation
-
-Video Compression
-
-Video Optimization
-
-Video Rendering
-
-Video Compositing
-
-Non-Linear Editing
-
-Programmatic Video
-
-Automated Video Generation
-
-Video Personalization
-
-Dynamic Video
-
-Video Templates
-
-Timeline Rendering
-
-Scene Composition
-
-Frame Processing
-
-Frame Extraction
-
-Thumbnail Generation
-
-Poster Frame
-
-Sprite Sheets
-
-Video Previews
-
-Video Montage
-
-Video Concatenation
-
-Video Trimming
-
-Video Cropping
-
-Video Resizing
-
-Video Rotation
-
-Video Watermarking
-
-Video Overlay
-
-Video Filtering
-
-Color Correction
-
-Color Grading
-
-Chroma Key
-
-Green Screen
-
-Motion Tracking
-
-Object Tracking
-
-Face Tracking
-
-Scene Detection
-
-Shot Detection
-
-Keyframe Extraction
-
-Video Summarization
-
-Video Captioning
-
-Video Transcription
-
-Speech-to-Text
-
-Subtitle Generation
-
-Subtitle Translation
-
-Automatic Dubbing
-
-Audio Extraction
-
-Audio Normalization
-
-Audio Mixing
-
-Audio Transcoding
-
-Adaptive Bitrate
-
-ABR
-
-HLS
-
-MPEG-DASH
-
-CMAF
-
-WebRTC
-
-RTMP
-
-RTSP
-
-SRT
-
-LL-HLS
-
-Low-Latency Streaming
-
-Ultra-Low-Latency Streaming
-
-Live Streaming
-
-Video-on-Demand
-
-VOD
-
-Video CDN
-
-Video Delivery
-
-Video Storage
-
-Object Storage
-
-Media Asset Management
-
-Video CMS
-
-Video API
-
-Media API
-
-Video-as-a-Service
-
-Programmable Video
-
-Cloud Transcoding
-
-Self-Hosted Transcoding
-
-Distributed Transcoding
-
-GPU Transcoding
-
-Hardware Encoding
-
-Hardware Decoding
-
-NVENC
-
-NVDEC
-
-VideoToolbox
-
-Quick Sync
-
-VA-API
-
-VMAF
-
-PSNR
-
-SSIM
-
-MS-SSIM
-
-Content-Aware Encoding
-
-Per-Title Encoding
-
-Per-Scene Encoding
-
-Bitrate Ladder
-
-Resolution Ladder
-
-Encoding Ladder
-
-Constant Bitrate
-
-Variable Bitrate
-
-Two-Pass Encoding
-
-H.264
-
-H.265
-
-HEVC
-
-AV1
-
-VP8
-
-VP9
-
-VVC
-
-H.266
-
-ProRes
-
-DNxHD
-
-DNxHR
-
-MP4
-
-MOV
-
-MKV
-
-WebM
-
-MPEG-TS
-
-CMAF
-
-FFmpeg
-
-GStreamer
-
-OpenCV
-
-MediaMTX
-
-SRS
-
-OvenMediaEngine
-
-WebRTC
-
-Media Servers
-
-Media Routers
-
-Streaming Servers
-
-Video Players
-
-Video.js
-
-Shaka Player
-
-hls.js
-
-dash.js
-
-Plyr
-
-Clappr
-
-Video AI
-
-Video Computer Vision
-
-Object Detection
-
-Object Tracking
-
-Video Classification
-
-Action Recognition
-
-Face Detection
-
-Pose Estimation
-
-OCR
-
-Content Moderation
-
-Video Embeddings
-
-Multimodal Video
-
-AI Video Generation
-
-Text-to-Video
-
-Image-to-Video
-
-Video-to-Video
-
-Generative Video
-
-Diffusion Video Models
-
-Video Understanding
-
-Video Search
-
-Video Retrieval
-
-Video Analytics
-
-QoE
-
-Video Observability
-
-Playback Analytics
-
-Buffering
-
-Rebuffering
-
-Startup Time
-
-Dropped Frames
-
-Playback Failure
-
-Bitrate Adaptation
-
-CDN Optimization
-
-Edge Video Processing
-
-Media Workflow Automation
-
-Video Processing Pipelines
-
-Media Pipelines
-
-Video Job Queues
-
-Distributed Media Workers
-
-Kubernetes Video Processing
-
-Serverless Video Processing
-
-Self-Hosted Video Infrastructure
-
-Open-Source Video Processing
-
-Open-Source Video APIs
-
-Open-Source Video Platforms
-
-Open-Source Video Codecs
-
-Open-Source Media Servers
-
-Open-Source Video Editors
-
-How to Contribute
-
-Fork the repo.
-
-Add/edit entries in README.md (follow existing format).
-
-Include: name, official link or GitHub repository, 1–2 sentence description, and whether it is SaaS/Hosted or open-source.
-
-For video-processing libraries, identify the primary processing capability.
-
-For media servers, identify the supported protocols.
-
-Clearly distinguish open-source, source-available, open-core, managed SaaS, and proprietary products.
-
-Verify the current license before adding an open-source entry.
-
-Prefer actively maintained repositories with meaningful documentation and recent development.
-
-Do not describe a codec library as a complete video-processing platform.
-
-Do not describe a video player as a video-processing engine.
-
-Prefer projects that materially contribute to video processing, transcoding, encoding, editing, streaming, media APIs, video AI, or media infrastructure.
-
-Submit a PR with a short explanation.
-
-Star the repo if you find it useful!
-
-Disclaimer
-
-This is a community-curated list — not exhaustive and not an endorsement.
-
-The video-processing ecosystem changes rapidly.
-
-Video-processing platforms, media servers, video editors, codecs, players, and computer-vision frameworks represent different layers of the video technology stack.
-
-FFmpeg and GStreamer are foundational processing frameworks rather than complete hosted equivalents of Cloudinary or Mux.
-
-MediaMTX, SRS, OvenMediaEngine, Janus, and similar projects primarily address streaming/media-server infrastructure rather than general-purpose video transformation.
-
-Video.js, Shaka Player, hls.js, and dash.js are primarily playback technologies rather than video-processing engines.
-
-Codec projects such as x264, x265, SVT-AV1, rav1e, dav1d, VVenC, and libvpx are low-level encoding/decoding components.
-
-Open-source projects may have different licenses, governance models, hosted offerings, and enterprise editions. Always verify the current license before commercial deployment.
-
-Video processing can be computationally expensive. Large-scale transcoding often requires careful CPU/GPU capacity planning, storage architecture, queue management, and CDN design.
-
-Video quality and encoding efficiency depend heavily on the source material, codec, resolution, bitrate, frame rate, GOP structure, hardware, encoder settings, and target playback environment.
-
-Adaptive bitrate streaming requires careful encoding ladders, segment configuration, packaging, origin infrastructure, and CDN delivery.
-
-Self-hosted video infrastructure provides greater control but requires responsibility for storage, processing capacity, security, monitoring, scaling, backups, CDN configuration, and media delivery.
-
-AI-based video processing can introduce significant GPU requirements and should be evaluated separately from conventional transcoding workloads.
-
-Made for video engineers, media infrastructure engineers, streaming developers, AI engineers, content platforms, SaaS developers, broadcasters, and open-source developers.
-Let's make video processing more open, programmable, scalable, efficient, and accessible.
+<div align="center">
+  <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a> and the global open-source media engineering community.</sub>
+</div>

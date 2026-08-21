@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="50%" stop-color="#121526" />
+      <stop offset="100%" stop-color="#06070a" />
+    </linearGradient>
+    
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#a855f7;#ec4899;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#ec4899;#38bdf8;#818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#38bdf8;#a855f7;#ec4899" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.1" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+        font-weight: 900;
+        font-size: 48px;
+        letter-spacing: 2px;
+      }
+      .subtitle-text {
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        fill: #94a3b8;
+        letter-spacing: 2.5px;
+      }
+      .tag-badge {
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.04); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      .pulse-circle {
+        animation: pulseGlow 5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-group {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#334155" stroke-width="0.7" opacity="0.15">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Ambient Light Circles -->
+  <circle cx="200" cy="180" r="160" fill="url(#accentGlow)" class="pulse-circle" />
+  <circle cx="1000" cy="150" r="180" fill="#38bdf8" opacity="0.1" class="pulse-circle" style="animation-delay: -2.5s;" />
+
+  <!-- Animated Equalizer / Waveform Bars -->
+  <g fill="url(#neonGrad)" opacity="0.85">
+    <rect x="80" y="160" width="5" height="40" rx="2.5">
+      <animate attributeName="height" values="40;90;25;70;40" dur="2.1s" repeatCount="indefinite" />
+      <animate attributeName="y" values="160;135;167;145;160" dur="2.1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="94" y="150" width="5" height="60" rx="2.5">
+      <animate attributeName="height" values="60;30;100;45;60" dur="1.7s" repeatCount="indefinite" />
+      <animate attributeName="y" values="150;165;130;157;150" dur="1.7s" repeatCount="indefinite" />
+    </rect>
+    <rect x="108" y="140" width="5" height="80" rx="2.5">
+      <animate attributeName="height" values="80;110;50;95;80" dur="2.4s" repeatCount="indefinite" />
+      <animate attributeName="y" values="140;125;155;132;140" dur="2.4s" repeatCount="indefinite" />
+    </rect>
+    <rect x="122" y="155" width="5" height="50" rx="2.5">
+      <animate attributeName="height" values="50;85;30;105;50" dur="1.9s" repeatCount="indefinite" />
+      <animate attributeName="y" values="155;137;165;127;155" dur="1.9s" repeatCount="indefinite" />
+    </rect>
+    <rect x="136" y="165" width="5" height="30" rx="2.5">
+      <animate attributeName="height" values="30;70;110;40;30" dur="2.6s" repeatCount="indefinite" />
+      <animate attributeName="y" values="165;145;125;160;165" dur="2.6s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- Animated Dynamic Waveform Line at Bottom -->
+  <path d="M0,320 Q150,290 300,320 T600,320 T900,320 T1200,320" fill="none" stroke="url(#neonGrad)" stroke-width="2.5" opacity="0.7">
+    <animate attributeName="d" 
+      values="M0,320 Q150,290 300,320 T600,320 T900,320 T1200,320;
+              M0,320 Q150,345 300,320 T600,320 T900,320 T1200,320;
+              M0,320 Q150,290 300,320 T600,320 T900,320 T1200,320" 
+      dur="4s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Video Processing Icon Badge -->
+  <g class="floating-group" transform="translate(180, 75)">
+    <rect x="0" y="0" width="70" height="70" rx="18" fill="#1e1b4b" stroke="url(#neonGrad)" stroke-width="2.5" filter="url(#subtleGlow)" />
+    <polygon points="27,20 27,50 51,35" fill="url(#neonGrad)">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite" />
+    </polygon>
+  </g>
+
+  <!-- Main Titles & Branding -->
+  <g transform="translate(280, 125)">
+    <rect x="0" y="-45" width="235" height="28" rx="14" fill="#312e81" opacity="0.6" stroke="#6366f1" stroke-width="1" />
+    <circle cx="14" cy="-31" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="28" y="-32" class="tag-badge" fill="#a5b4fc">CURATED TECH STACK</text>
+
+    <!-- Main Title -->
+    <text x="0" y="25" class="title-text" fill="url(#neonGrad)" filter="url(#subtleGlow)">
+      AWESOME VIDEO PROCESSING
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="65" class="subtitle-text">
+      TRANSCODING • STREAMING • ENCODING • CODECS • MEDIA APIs
+    </text>
+
+    <!-- Tech Badges Group -->
+    <g transform="translate(0, 100)">
+      <g transform="translate(0,0)">
+        <rect width="115" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="57" y="19" text-anchor="middle" class="tag-badge">⚡ FFmpeg</text>
+      </g>
+      <g transform="translate(125,0)">
+        <rect width="125" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="62" y="19" text-anchor="middle" class="tag-badge">📡 WebRTC / HLS</text>
+      </g>
+      <g transform="translate(260,0)">
+        <rect width="135" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="67" y="19" text-anchor="middle" class="tag-badge">🎞️ AV1 / H.265</text>
+      </g>
+      <g transform="translate(405,0)">
+        <rect width="145" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="72" y="19" text-anchor="middle" class="tag-badge">🤖 Computer Vision</text>
+      </g>
+      <g transform="translate(560,0)">
+        <rect width="130" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="65" y="19" text-anchor="middle" class="tag-badge">☁️ Cloud APIs</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Border Highlight -->
+  <rect x="1" y="1" width="1198" height="358" rx="15" fill="none" stroke="url(#neonGrad)" stroke-width="1.8" opacity="0.6" />
+</svg>
