@@ -39,46 +39,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-- **[Cloudinary](https://cloudinary.com/)**  
-  Cloud-based image and video platform providing upload, storage, transformation, transcoding, optimization, AI processing, delivery, and programmable media APIs. Cloudinary's video platform supports dynamic transcoding, smart cropping, overlays, adaptive bitrate streaming, subtitles, and other automated transformations. 
-
-
-- **[Imgix](https://www.imgix.com/)**  
-  Real-time image and media processing platform focused on URL-based transformation, optimization, rendering, and delivery.
-
-
-- **[Shotstack](https://shotstack.io/)**  
-  Cloud video automation API that uses JSON timelines to programmatically edit, compose, render, and personalize videos at scale. Its APIs cover editing, hosted assets, and ingestion/processing. 
-
-
-- **[Zencoder](https://zencoder.com/)**  
-  Cloud video encoding API for automated transcoding, format conversion, encoding workflows, and large-scale media processing.
-
-
-- **[Mux](https://www.mux.com/)**  
-  Developer-focused video infrastructure platform covering video ingestion, encoding, storage, playback, streaming, and video analytics.
-
-
-- **[Cloudflare Images](https://www.cloudflare.com/developer-platform/products/cloudflare-images/)**  
-  Cloudflare's image/media infrastructure for image storage, transformation, optimization, and delivery. It can be combined with Cloudflare's broader media and streaming services.
-
-
-- **[Filestack](https://www.filestack.com/)**  
-  File and media processing platform providing upload, transformation, conversion, storage integration, and delivery APIs.
-
-
-- **[Transloadit](https://transloadit.com/)**  
-  Automated file and video processing platform using API-driven processing workflows. Its processing robots include video encoding, resizing, conversion, and watermarking. 
-
-
-- **[Banuba](https://www.banuba.com/)**  
-  Video and AR technology platform providing SDKs for video editing, effects, filters, face tracking, augmented reality, and user-generated video experiences.
-
-
-- **[api.video](https://api.video/)**  
-  Video API platform providing video upload, encoding, storage, playback, streaming, and programmable video infrastructure.
-
+| Platform | Description | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Cloudinary](https://cloudinary.com/)** | Cloud-based image and video platform providing upload, storage, transformation, transcoding, optimization, AI processing, delivery, and programmable media APIs. | **Plus Plan:** $99/month ($89/month billed annually) for 225 monthly credits | **Free Forever Plan:** 25 monthly credits (~25,000 transformations, 25 GB storage, or 25 GB net bandwidth), up to 3 user seats |
+| **[Imgix](https://www.imgix.com/)** | Real-time image and media processing platform focused on URL-based transformation, optimization, rendering, and delivery. | **Starter Plan:** $25/month (includes 100 credits; Basic plan at $75/month for 375 credits) | **30-Day Free Trial:** 100 free credits to evaluate platform features (no credit card required; no permanent free plan) |
+| **[Shotstack](https://shotstack.io/)** | Cloud video automation API that uses JSON timelines to programmatically edit, compose, render, and personalize videos at scale. | **Starter Plan:** $39/month (includes 200 render minutes / credits; PAYG available at ~$0.30/min with $75 min commitment) | **30-Day Free Trial / Sandbox:** 10 free credits valid for 30 days (test renders include watermark; no permanent production free plan) |
+| **[Zencoder](https://zencoder.com/)** | Cloud video encoding API by Brightcove for automated transcoding, format conversion, encoding workflows, and large-scale media processing. | **Pay-As-You-Go:** $0.05 per output minute ($0.02/min on volume monthly subscription plans) | **Integration Test Mode (Free Forever):** Unlimited free test jobs with output video duration capped at 5 seconds per job |
+| **[Mux](https://www.mux.com/)** | Developer-focused video infrastructure platform covering video ingestion, encoding, storage, playback, streaming, and video analytics. | **Pay-As-You-Go ($0 base fee):** $0.05/min input encoding ($0/min for Basic quality), $0.003/min storage/month, $0.0012/min streamed delivery | **Free Forever Plan:** Up to 10 stored video assets and 100,000 delivery minutes/month (live streaming excluded) |
+| **[Cloudflare Images](https://www.cloudflare.com/developer-platform/products/cloudflare-images/)** | Cloudflare's image and video infrastructure for media storage, transformation, optimization, streaming, and global CDN delivery. | **Stream:** Starts at $5.00/month (covers 1,000 stored minutes; delivery at $1.00/1,000 mins). **Images:** $5.00/month (100,000 images stored + $1.00/100k delivered) | **Images:** 5,000 free unique transformations/month. **Stream:** 100 free stored minutes and 10,000 free delivery minutes/month on Pro/Business plans |
+| **[Filestack](https://www.filestack.com/)** | File and media processing platform providing upload, transformation, conversion, storage integration, and delivery APIs. | **Start Plan:** $69/month (includes 50,000 uploads, 25,000 transformations, 50 GB bandwidth, 100 GB storage) | **Free Forever Plan:** 500 uploads/month, 1,000 transformations/month, 1.0 GB bandwidth/month, 1.0 GB storage, 1 user seat |
+| **[Transloadit](https://transloadit.com/)** | Automated file and video processing platform using API-driven processing workflows, encoding robots, resizing, and watermarking. | **Community / Starter Tier:** $9/month (includes 50 GB processing data + $0.18/GB overage) | **Community Plan (Free Forever):** 5 GB processing data per month (trial outputs subject to watermarking/trimming) |
+| **[Banuba](https://www.banuba.com/)** | Video and AR technology platform providing SDKs for video editing, effects, filters, face tracking, and user-generated video experiences. | **Custom Pricing (Quote-based):** Tiered based on Monthly Active Users (MAU) per platform (iOS, Android, Flutter, React Native; contact sales for quote) | **14-Day Free Trial:** Full SDK feature access and evaluation token across all supported platforms for 14 days |
+| **[api.video](https://api.video/)** | Video API platform providing video upload, encoding, storage, playback, streaming, and programmable video infrastructure. | **Pay-As-You-Go ($0 base fee):** $0.00/min encoding (free unlimited), hosting from $0.00285/min stored/month, delivery from $0.0017/min delivered | **Developer Sandbox (Free Forever):** Full API testing access, videos capped at 30 seconds max length, watermarked, 24-hour expiration |
 
 ### Additional Major Hosted Video Processing Platforms
 Recommended Open-Source Combinations
