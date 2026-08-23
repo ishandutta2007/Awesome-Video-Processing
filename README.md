@@ -152,6 +152,9 @@ Welcome to the definitive guide and repository index for **Video Processing Engi
 28. **[MLT Framework](https://github.com/mltframework/mlt)** [![GitHub stars](https://img.shields.io/github/stars/mltframework/mlt?style=social&color=white)](https://github.com/mltframework/mlt/stargazers)  
     🎛️ Modular open-source multimedia framework designed for television broadcasting, non-linear video editing, clip compositing, and transition rendering.
 
+29. **[OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio)** [![GitHub stars](https://img.shields.io/github/stars/Orkas-AI/Orkas-VideoStudio?style=social&color=white)](https://github.com/Orkas-AI/Orkas-VideoStudio/stargazers)  
+    🤖 MIT-licensed TypeScript CLI and MCP toolkit for editable JSON timelines, reusable video skills, and automatic assembly.
+
 ---
 
 ## 🏗️ Recommended Architecture Combinations
