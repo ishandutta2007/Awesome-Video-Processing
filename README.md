@@ -47,6 +47,8 @@ Welcome to the definitive guide and repository index for **Video Processing Engi
 
 ## ☁️ SaaS / Hosted Video Processing Platforms
 
+> 📊 **Market Insights:** The global cloud video processing and media infrastructure market is estimated at **~$10B–$15B+** (projected to surpass **$30B+ by 2030** at ~16–20% CAGR). The sector is **moderately to highly fragmented** rather than a winner-take-all market, with strong differentiation across edge CDN giants, developer-first streaming APIs, enterprise OTT video pipelines, real-time WebRTC engines, and programmatic video rendering platforms.
+
 *Ranked in descending order of company scale (Valuation / Market Cap / Revenue).*
 
 | Platform | Description | Company Scale (Valuation / ARR) | Starting Pricing | Free Tier / Trial Limits |
